@@ -1,0 +1,4 @@
+[tool.taskipy.tasks]
+lint = "nbqa autopep8 main.ipynb --in-place"
+format = "nbqa autopep8 main.ipynb --in-place"
+run = "python main.py"

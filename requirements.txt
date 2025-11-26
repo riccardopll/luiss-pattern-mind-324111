@@ -1,0 +1,11 @@
+numpy
+pandas
+plotly
+Pillow
+nbformat
+ipykernel
+nbqa
+autopep8
+taskipy
+tensorflow
+scikit-learn
