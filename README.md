@@ -10,8 +10,6 @@
 
 This project explores visual concept organization in the PatternMind dataset, which contains 25,557 images distributed across 233 categories. Our primary objective is understanding and organization rather than maximizing classification accuracy: we aim to uncover patterns, clusters, and relationships among visual categories in feature space.
 
-![Diagram](images/diagram.png)
-
 Our framework proceeds in four stages. First, we train a custom CNN to extract 256-dimensional feature embeddings that capture the visual essence of each image. Second, we apply PCA for dimensionality reduction, retaining 85% of variance in 50 components. Third, we use hierarchical clustering on category centroids to discover data-driven macro-categories that reveal natural visual themes without predefined semantic labels. Finally, we evaluate K-Means clustering against both fine-grained (233) and macro-category labels using Purity, ARI, and NMI metrics to assess unsupervised organization quality at different granularities.
 
 To establish performance baselines, we also compare three supervised classifiers (Logistic Regression, SVM, and Random Forest) on the learned features. Our key findings demonstrate that CNN features encode meaningful visual structure: hierarchical clustering reveals coherent groupings such as space objects (saturn, mars, comet), birds (duck, goose, hummingbird), and vehicles, while simple linear classifiers achieve 40.9% accuracy on 233 classes, far above the 0.43% random baseline.
@@ -27,6 +25,8 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+![Diagram](images/diagram.png)
 
 ### 2.2 Data Loading and Preprocessing
 
