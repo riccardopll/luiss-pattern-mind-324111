@@ -1,5 +1,7 @@
 # PatternMind 324111
 
+_Submission for the LUISS Machine Learning course, which received top marks._
+
 **Team Members:**
 
 - Silvia Monteleone (315221)
